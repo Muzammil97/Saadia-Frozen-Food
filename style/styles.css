@@ -1,0 +1,314 @@
+/* General Styling */
+body {
+    font-family:'Times New Roman', Times, serif
+    /* background-color: black; */
+
+}
+.cart-highlight {
+  background-color: #28a745 !important; /* Green background for Checkout link */
+  color: white !important; /* White text */
+}
+.cart-count {
+  font-size: 12px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  margin-left: 5px;
+}
+#floatingButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#floatingButton i {
+  font-size: 1.5rem;
+  color: white;
+}
+
+
+.companyLogo{
+  font-family:'Times New Roman', Times, serif;
+  display: inline-block;
+  justify-content: right;
+
+}
+
+.card-body {
+    text-align: center;
+}
+
+/* Cart Styles */
+#cart-items {
+    margin-top: 20px;
+}
+
+#cart-items p {
+    font-size: 1.2rem;
+}
+
+
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.product-card .card-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.product-card .card-text {
+  font-size: 0.9rem;
+}
+
+
+
+.card-img-top{
+    height: 186px;
+}
+
+.card{
+    display: inline-block;
+    margin: auto;
+}
+   
+
+/*  
+ @media only screen and (max-width:500px){
+    .carousel-item img{
+        height: 450px;
+     }
+   
+    .carousel-caption{
+     bottom:320px ;
+   }
+   .carousel-caption h3{
+     font-size: 25px;
+   }
+   .carousel-caption p{
+     width: 100%;
+     font-size: 15px;
+   }
+  
+ }  
+ */
+
+
+ .user-review-section {
+  background-color: #f9f9f9;
+}
+
+.review-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.review-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.review-stars {
+  color: #f4c150; /* Star color */
+  font-size: 1.5rem;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #555;
+}
+
+
+.wedding-events-section {
+  background-color: #f9f9f9;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.section-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+.button-wrapper .btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.button-wrapper .btn-outline-secondary {
+  border-color: #0088ff;
+  color: #0088ff;
+}
+
+.button-wrapper .btn:hover {
+  opacity: 0.9;
+}
+
+
+/* .navbar-brand {
+  max-height: 50px;
+  max-width: 50px;
+} */
+/* / */
+/* 
+@media (max-width: 768px) {
+  .navbar-nav {
+    text-align: center;
+}
+  .navbar-brand {
+    max-height: 40px;
+    max-width: 40px;
+  }
+
+  .carousel-caption h3 {
+    font-size: 1rem;
+  }
+
+  .carousel-caption p {
+    font-size: 0.8rem;
+  }
+
+  .product-card img {
+    max-height: 150px;
+    object-fit: cover;
+  }
+
+  .review-card {
+    padding: 1rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .section-description {
+    font-size: 0.9rem;
+  }
+} */
+
+/* img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.btn {
+  padding: 10px 20px;
+  font-size: 0.9rem;
+}
+
+ */
+
+
+.carousel-item img{
+  height: 650px;
+  /* height: 90vh; */
+}
+
+.carousel-caption h3{
+ font-size: 55px;
+ font-weight: bold;
+ letter-spacing: 1px;
+ text-transform: uppercase;
+ /* margin-top: 80%; */
+ color: rgb(255, 238, 0);
+ text-shadow: 2px 1px #000000;
+ /* z-index: 1; */
+}
+.carousel-caption {
+ /* bottom: 400px; */
+ z-index: 1;
+ top: 45%;
+}
+.carousel-caption p{
+ width: 100%;
+ margin: auto;
+ font-size: 24px;   
+ color: rgb(255, 255, 255);
+ text-shadow: 1px 1px rgb(0, 0, 0);
+
+}
+.carousel-item:before{
+  content: "";
+ background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+
+}
+
+@media only screen and (max-width:960px){
+  .carousel-item img{
+      height: 400px;
+   }
+ 
+  .carousel-caption{
+   bottom:320px ;
+ }
+ .carousel-caption h3{
+   font-size: 30px;
+ }
+ .carousel-caption p{
+   width: 100%;
+   font-size: 18px;
+ }
+
+}
+
+
+@media only screen and (max-width:500px){
+  .carousel-item img{
+      height: 220px;
+   }
+ 
+  .carousel-caption{
+   bottom:220px ;
+ }
+ .carousel-caption h3{
+   font-size: 20px;
+ }
+ .carousel-caption p{
+   width: 100%;
+   font-size: 12px;
+ }
+
+}
+

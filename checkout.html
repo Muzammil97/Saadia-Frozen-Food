@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout - Frozen Foods</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./style/styles.css">
+  <!-- SweetAlert2 Library -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <!-- Adjust logo size -->
+      <div class="d-inline justify-content-center">
+        <img src="./img/LOGO/img3-removebg-preview.png" class="navbar-brand rounded-circle" style="max-height: 50px; max-width: 50px;" alt="">
+      <a class="navbar-brand" href="./index.html">SAADIA FROZEN FOOD</a>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="./contact.html">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="./product.html">Products</a></li>
+          <li class="nav-item"><a class="nav-link active" onclick="goToCheckout()" href="javascript:void(0)">Checkout <span id="cartCount" class="cart-count" style="display: none;">0</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<section id="checkout" class="py-5 mt-4">
+  <div class="container">
+    <h2 class="text-center mb-4">Checkout</h2>
+    <div class="row">
+      <div class="col-md-8 mx-auto">
+        <!-- Cart Items List -->
+        <ul id="cart-items" class="list-group mb-3"></ul>
+
+        <!-- Total Amount -->
+        <h3 class="text-right">Total: PKR <span id="cart-total">0.00</span></h3>
+
+        <!-- Action Buttons -->
+        <div id="checkout-actions" class="mt-4 gap-5" style="display:flex ; justify-content: center; ">
+          <button class="btn btn-danger " id="clear-cart">Clear Cart</button>
+          <button class="btn btn-success " id="proceed-to-payment">Proceed to Payment</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Footer -->
+<footer class="bg-dark text-light pt-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <a href="" class="footer-logo-section">
+          <img class="footer-logo rounded-circle" height="120px" width="150px"  src="./img/LOGO/img3-removebg-preview.png" alt=" company Logo">
+        </a>
+      </div>
+      <div class="col-md-4">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="./about.html">About Us</a></li>
+          <li><a href="./contact.html">Contact Us</a></li>
+          <li><a href="./product.html">Our Products</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h5>Contact Us</h5>
+        <address>
+          <p>Home: 75300, Block 13-C Block 13 C Gulshan-e-Iqbal, Karachi, Karachi City, Sindh 75300, Pakistan</p>
+          <p>Tel: <a href="tel:+923136798010">(92) 313 679 8010</a></p>
+          <p>Email: <a href="mailto:ummemoosa982@gmail.com">ummemoosa982@gmail.com</a></p>
+        </address>
+      </div>
+    </div>
+    <div class="text-center mt-3">
+    <p>SAADIA FROZEN FOODS 2024 All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+<script src="./js/checkoutscript.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

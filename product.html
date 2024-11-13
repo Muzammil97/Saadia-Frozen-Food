@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products - Frozen Foods</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link rel="stylesheet" href="./style/styles.css">
+</head>
+<body>
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <!-- Adjust logo size -->
+      <div class="d-inline justify-content-center">
+        <a class="navbar-brand" href="./index.html"><img src="./img/LOGO/img3-removebg-preview.png" class="navbar-brand rounded-circle" style="max-height: 50px; max-width: 50px;" alt=""></a>
+        
+      <a class="navbar-brand companyLogo" href="./index.html">SAADIA FROZEN FOOD</a>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="./contact.html">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link active" href="javascript:void(0)">Products</a></li>
+          <li class="nav-item"><a class="nav-link" onclick="goToCheckout()" href="./checkout.html">Checkout <span id="cartCount" class="cart-count" style="display: none;">0</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<section id="products" class="py-5 mt-5">
+  <div class="container text-center">
+    <h1 class="mb-4">Our Products</h1>
+    <h3 class="mb-4">We only deliver to Gulshan-e-Iqbal All Block</h3>
+
+    <div class="row" id="product-list">
+      <!-- Product 1 -->
+      <div class="col-md-4 mb-5">
+        <div class="card">
+          <img src="./img/PRODCUT/ARABIC SAMOSA.png" class="card-img-top" alt="ARABIC SAMOSA">
+          <div class="card-body">
+            <h5 class="card-title">ARABIC SAMOSA <br> (12 Pcs Per Pack)</h5>
+            <p class="card-text">Price: PKR 1,250</p>
+            <button class="btn btn-primary add-to-cart" data-id="1" data-name="ARABIC SAMOSA" data-price="1250">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="col-md-4 mb-5">
+        <div class="card">
+          <img src="./img/PRODCUT/NUGGET.png" class="card-img-top" alt="NUGGET">
+          <div class="card-body">
+            <h5 class="card-title">CHICKEN NUGGETS <br> (12 Pcs Per Pack)</h5>
+            <p class="card-text">Price: PKR 660</p>
+            <button class="btn btn-primary add-to-cart" data-id="2" data-name="CHICKEN NUGGETS" data-price="660">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+         <!-- Product 3 -->
+         <div class="col-md-4 mb-5">
+          <div class="card">
+            <img src="./img/PRODCUT/BREAD CHICKEN CHIMMI CHANGA.png" class="card-img-top" alt="CHIMMI CHANGA">
+            <div class="card-body">
+              <h5 class="card-title">CHICKEN CHIMMI CHANGA <br> (12 Pcs Per Pack)</h5>
+              <p class="card-text">Price: PKR 960</p>
+              <button class="btn btn-primary add-to-cart" data-id="3" data-name="CHICKEN CHIMMI CHANGA" data-price="960">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+           <!-- Product 4 -->
+      <div class="col-md-4 mb-5">
+        <div class="card">
+          <img src="./img/PRODCUT/CHEESE LOLIIPOP.png" class="card-img-top" alt="CHEESE LOLIIPOP">
+          <div class="card-body">
+            <h5 class="card-title">CHEESE LOLIIPOP <br> (12 Pcs Per Pack)</h5>
+            <p class="card-text">Price: PKR 860</p>
+            <button class="btn btn-primary add-to-cart" data-id="2" data-name="CHEESE LOLIIPOP" data-price="15">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+         <!-- Product 5 -->
+         <div class="col-md-4 mb-5">
+          <div class="card">
+            <img src="./img/PRODCUT/CHICKEN CHILLOS.png" class="card-img-top" alt="CHICKEN CHILLOS">
+            <div class="card-body">
+              <h5 class="card-title">CHICKEN CHILLOS <br> (6 Pcs Per Pack)</h5>
+              <p class="card-text">Price: PKR 700</p>
+              <button class="btn btn-primary add-to-cart" data-id="2" data-name="CHICKEN CHILLOS" data-price="15">
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+      <!-- Product 6 -->
+      <div class="col-md-4 mb-5">
+        <div class="card">
+          <img src="./img/PRODCUT/CHICKEN SAMOSA.png" class="card-img-top" alt="CHICKEN SAMOSA">
+          <div class="card-body">
+            <h5 class="card-title">CHICKEN SAMOSA <br> (12 Pcs Per Pack)</h5>
+            <p class="card-text">Price: PKR 560</p>
+            <button class="btn btn-primary add-to-cart" data-id="3" data-name="CHICKEN SAMOSA" data-price="20">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+       <!-- Product 7 -->
+       <div class="col-md-4 mb-5">
+        <div class="card">
+          <img src="./img/PRODCUT/CHICKEN SHAHI ROLL.png" class="card-img-top" alt="CHICKEN SHAHI ROLL">
+          <div class="card-body">
+            <h5 class="card-title">CHICKEN SHAHI ROLL <br> (12 Pcs Per Pack)</h5>
+            <p class="card-text">Price: PKR 720</p>
+            <button class="btn btn-primary add-to-cart" data-id="2" data-name="CHICKEN SHAHI ROLL" data-price="15">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+       <!-- Product 8 -->
+       <div class="col-md-4 mb-5">
+        <div class="card">
+          <img src="./img/PRODCUT/ONEBITE ROLL.png" class="card-img-top" alt="ONEBITE ROLL">
+          <div class="card-body">
+            <h5 class="card-title">ONEBITE ROLL <br> (12 Pcs Per Pack)</h5>
+            <p class="card-text">Price: PKR 620</p>
+            <button class="btn btn-primary add-to-cart" data-id="2" data-name="ONEBITE ROLL" data-price="15">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+       <!-- Product 9 -->
+       <div class="col-md-4 mb-5">
+        <div class="card">
+          <img src="./img/PRODCUT/ONEBITE SAMOSA.png" class="card-img-top" alt="ONEBITE SAMOSA">
+          <div class="card-body">
+            <h5 class="card-title">ONEBITE SAMOSA <br> (12 Pcs Per Pack)</h5>
+            <p class="card-text">Price: PKR 640</p>
+            <button class="btn btn-primary add-to-cart" data-id="2" data-name="ONEBITE SAMOSA" data-price="15">
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button id="floatingCartButton" class="btn btn-success" style="display: none; position: fixed; bottom: 20px; right: 20px;">
+    View Cart
+  </button>
+</section>
+
+
+<!-- Footer -->
+<footer class="bg-dark text-light pt-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <a href="#" class="footer-logo-section">
+          <img class="footer-logo rounded-circle" height="120px" width="150px"  src="./img/LOGO/img3-removebg-preview.png" alt=" company Logo">
+        </a>
+      </div>
+      <div class="col-md-4">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="./about.html">About Us</a></li>
+          <li><a href="javascript:void(0)">Contact Us</a></li>
+          <li><a href="./product.html">Our Products</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h5>Contact Us</h5>
+        <address>
+          <p>Home: 75300, Block 13-C Block 13 C Gulshan-e-Iqbal, Karachi, Karachi City, Sindh 75300, Pakistan</p>
+          <p>Tel: <a href="tel:+923136798010">(92) 313 679 8010</a></p>
+          <p>Email: <a href="mailto:ummemoosa982@gmail.com">ummemoosa982@gmail.com</a></p>
+        </address>
+      </div>
+    </div>
+    <div class="text-center mt-3">
+    <p>SAADIA FROZEN FOODS 2024 All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+<script src="./js/productscript.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

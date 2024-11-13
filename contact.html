@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Dawn Frozen Foods</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <link rel="stylesheet" href="./style/styles.css">
+
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-database.js"></script>
+</head>
+<body>
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <!-- Adjust logo size -->
+      <div class="d-inline justify-content-center">
+        <img src="./img/LOGO/img3-removebg-preview.png" class="navbar-brand rounded-circle" style="max-height: 50px; max-width: 50px;" alt="">
+      <a class="navbar-brand" href="./index.html">SAADIA FROZEN FOOD</a>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link active" href="javascript:void(0)">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="./product.html">Products</a></li>
+          <li class="nav-item"><a class="nav-link" onclick="goToCheckout()" href="./checkout.html">Checkout</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main class="mt-5 pt-5">
+  <section class="contact-section section-padding">
+    <div class="container">
+      <h1 class="text-center mb-4">Contact Us</h1>
+      
+      <!-- Contact Form -->
+      <div class="row mb-5">
+        <div class="col-md-6">
+          <h3>Send Us a Message</h3>
+          <form id="contactForm">
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <p id="submitMessage" class="mt-3" style="display: none; color: green;">Thank you! Your message has been sent.</p>
+          </form>
+        </div>
+
+        <!-- Contact Details -->
+        <div class="col-md-6 mt-5">
+          <h3>Get in Touch</h3>
+          <ul class="list-unstyled">
+            <li><strong>Home:</strong>Block 13-C Block 13 C Gulshan-e-Iqbal, Karachi, Karachi City, Sindh 75300, Pakistan</li>
+            <li><strong>Contact:</strong> (92) 313 679 8010</li>
+            <li><strong>Email:</strong> <a href="mailto:ummemoosa982@gmail.com">ummemoosa982@gmail.com</a></li>
+            <li><strong>Orders:</strong> <a href="tel:+923136798010">(92) 313 679 8010</a>, <a href="mailto:ummemoosa982@gmail.com">ummemoosa982@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- Footer -->
+<footer class="bg-dark text-light pt-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <a href="#" class="footer-logo-section">
+          <img class="footer-logo rounded-circle" height="120px" width="150px"  src="./img/LOGO/img3-removebg-preview.png" alt=" company Logo">
+        </a>
+      </div>
+      <div class="col-md-4">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="./about.html">About Us</a></li>
+          <li><a href="javascript:void(0)">Contact Us</a></li>
+          <li><a href="./product.html">Our Products</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h5>Contact Us</h5>
+        <address>
+          <p>Home: 75300, Block 13-C Block 13 C Gulshan-e-Iqbal, Karachi, Karachi City, Sindh 75300, Pakistan</p>
+          <p>Tel: <a href="tel:+923136798010">(92) 313 679 8010</a></p>
+          <p>Email: <a href="mailto:ummemoosa982@gmail.com">ummemoosa982@gmail.com</a></p>
+        </address>
+      </div>
+    </div>
+    <div class="text-center mt-3">
+    <p>SAADIA FROZEN FOODS 2024 All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="./js/contactscript.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
