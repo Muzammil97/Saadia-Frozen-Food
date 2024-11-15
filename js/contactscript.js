@@ -1,14 +1,5 @@
 // Firebase configuration
-var firebaseConfig = {
-    apiKey: "AIzaSyAzlasVy0R5esy9r5ufrVxI3AbZ-CUMeYE",
-    authDomain: "fir-auth-2f530.firebaseapp.com",
-    databaseURL: "https://fir-auth-2f530-default-rtdb.firebaseio.com",
-    projectId: "fir-auth-2f530",
-    storageBucket: "fir-auth-2f530.firebasestorage.app",
-    messagingSenderId: "587961815536",
-    appId: "1:587961815536:web:8bb5bffa413a7ac13a8d35",
-    measurementId: "G-8H43JS4KBZ"
-  };
+
 
 
   var app = firebase.initializeApp(firebaseConfig);
